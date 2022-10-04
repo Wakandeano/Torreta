@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/towerDefense_tilesheet.png" type="Texture" id=1]
+[ext_resource path="res://armaScript.gd" type="Script" id=2]
+[ext_resource path="res://TorretaScript.gd" type="Script" id=3]
+[ext_resource path="res://baseScript.gd" type="Script" id=4]
+
+[node name="Torreta" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="base" type="Sprite" parent="."]
+scale = Vector2( 3.31132, 3.2963 )
+z_as_relative = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1349.19, 452.952, 53.6954, 54.5757 )
+script = ExtResource( 4 )
+
+[node name="arma" type="Sprite" parent="."]
+position = Vector2( 1, -1 )
+scale = Vector2( 2.65384, 2.5597 )
+z_as_relative = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1279.1, 638.989, 65.8698, 67.8071 )
+script = ExtResource( 2 )
